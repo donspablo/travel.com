@@ -1,25 +1,17 @@
-name: Build and deploy Hugo site
-on: [push]
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.74.3'
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
-        with:
-          ftp_host: ftp.xn--rga.com
-          ftp_username: ${{ secrets.FTP_USERNAME }}
-          ftp_password: ${{ secrets.FTP_PASSWORD }}
-          local_source_dir: "public"
-          dist_target_dir: ${{ secrets.DOMAIN }}
-          delete: "false"
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.3.2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: "ftp.xn--rga.com"
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ${{ secrets.DOMAIN }}/
