@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "*", "status": 301, "headers": { "Location": "https://travel.obeyi.com/" } }
+  ]
+}

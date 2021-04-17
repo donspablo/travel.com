@@ -1,0 +1,50 @@
+//----------------------------------------------------//
+// FORMS                                              //
+//----------------------------------------------------//
+
+// Buttons
+//----------------------------------------------------//
+.btn {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+}
+
+// Input
+//----------------------------------------------------//
+input[type=text],
+input[type=password], 
+input[type=date], 
+input[type=datetime], 
+input[type=email], 
+input[type=number], 
+input[type=search], 
+input[type=tel], 
+input[type=time], 
+input[type=url],
+select,
+textarea {
+	width: 100%;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	cursor: text;
+	padding: 5px;
+  border-radius: 0;
+}
+
+// Form elements
+//----------------------------------------------------//
+.form-row {
+	margin-bottom: 10px;
+}
+
+.wrap-input,
+.wrap-select {
+	position: relative;
+}
+
+.wrap-label {
+
+}

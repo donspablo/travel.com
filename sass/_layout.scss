@@ -1,0 +1,67 @@
+//----------------------------------------------------//
+// LAYOUT                                             //
+//----------------------------------------------------//
+
+// Columns
+//----------------------------------------------------//
+[class^='column-'],
+[class*=' column-'] {
+	float: left;
+}
+.columns {
+	@extend .clearfix;
+}
+.column-50 {
+	width: 50%;
+}
+.column-33 {
+	width: 33.33%;
+}
+.column-25 {
+	width: 25%;
+}
+
+// General styles
+//----------------------------------------------------//
+body *,
+body *:after,
+body *:before {
+	box-sizing: border-box;
+}
+.container {
+	@extend .clearfix;
+	position: relative;
+	margin: 0 auto;
+	max-width: 970px;
+	padding: 0 15px;
+}
+.wrapper {
+	overflow: hidden;
+}
+
+// Footer
+//----------------------------------------------------//
+.footer {
+	text-align: center;
+	padding: 30px 0;
+	background-color: $gray;
+	&__logo {
+		margin-left: -42px;
+	}
+}
+
+//----------------------------------------------------//
+// MEDIA QUERIES                                     //
+//----------------------------------------------------//
+// Extrasmall devices < 768
+//----------------------------------------------------//
+@media screen and (max-width: 767px) {
+	.footer {
+		padding: 20px 0;
+		&__logo {
+			margin-left: -38px;
+		}
+	}
+}
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 21.542927 21.543903"
+   height="6.0801682mm"
+   width="6.0798926mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-325.23519,-438.57423)"
+     id="layer1">
+    <g
+       transform="translate(-12.696475,-9.6316154)"
+       id="layer1-3">
+      <g
+         transform="translate(337.47785,447.75203)"
+         id="g3354">
+        <g
+           style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+           sketch:type="MSPage"
+           id="g3340">
+          <path
+             style="fill:#000000"
+             d="m 8.7095493,-1.7866113 -7.1280739,6.16673 0,15.2682343 c 0,0.269988 0.2236826,0.488857 0.4990769,0.488857 l 14.0018467,0 c 0.275632,0 0.499076,-0.222747 0.499076,-0.488857 l 0,-15.2682343 -7.1280733,-6.16673 c -0.2054092,-0.1777061 -0.5426658,-0.174053 -0.7438524,0 z m 0.3719261,9.7015991 c 1.1045696,0 2.0000006,-0.875532 2.0000006,-1.9555556 0,-1.0800235 -0.895431,-1.9555555 -2.0000006,-1.9555555 -1.1045695,0 -2,0.875532 -2,1.9555555 0,1.0800236 0.8954305,1.9555556 2,1.9555556 l 0,0 z"
+             sketch:type="MSShapeGroup"
+             transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-3.7616701,9.081475)"
+             id="path3342" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <style
+     type="text/css"
+     id="style3361">
+	.st0{fill:#231F20;}
+	.st1{display:none;enable-background:new    ;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:5px;}
+</style>
+  <style
+     type="text/css"
+     id="style3382">
+	.st0{display:none;enable-background:new    ;}
+	.st1{font-family:'Arial-BoldMT';}
+	.st2{font-size:5px;}
+</style>
+</svg>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 78.600001 66"
+   height="18.626667mm"
+   width="22.182667mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-346.45308,-411.02475)"
+     id="layer1">
+    <g
+       transform="translate(335.75308,394.02475)"
+       id="g3411">
+      <g
+         id="g3384">
+        <polygon
+           points="47.6,76 37.1,76 37.1,83 62.7,83 62.7,76 52.2,76 52.2,27.8 77.2,27.8 77.2,23.2 22.9,23.2 22.9,27.8 47.6,27.8 "
+           id="polygon3386" />
+        <g
+           id="g3388">
+          <rect
+             x="49.599998"
+             y="19.200001"
+             width="0.60000002"
+             height="5"
+             id="rect3390" />
+        </g>
+        <path
+           d="m 36.9,56.9 -11.4,-31.8 -1.9,0 -11.4,31.8 -1.5,0 c 0,0 3.8,11.2 14,11.2 10.2,0 13.7,-11.2 13.7,-11.2 l -1.5,0 z m -22.2,0 9.9,-27.6 9.9,27.6 -19.8,0 z"
+           id="path3392" />
+        <path
+           d="m 87.8,56.9 -11.4,-31.8 -1.9,0 -11.4,31.8 -1.5,0 c 0,0 3.8,11.2 14,11.2 10.2,0 13.7,-11.2 13.7,-11.2 l -1.5,0 z m -22.3,0 9.9,-27.6 9.9,27.6 -19.8,0 z"
+           id="path3394" />
+        <g
+           id="g3396">
+          <path
+             d="m 51.5,23.5 0,-4.4 c 0,0 0,-0.3 -0.2,-0.5 -0.3,-0.3 -0.7,-0.4 -1.4,-0.4 -0.7,0 -1.2,0.2 -1.5,0.5 -0.2,0.2 -0.2,0.4 -0.2,0.4 l 0,4.4 -1.2,0 0,-4.4 c 0,0 0,-0.7 0.5,-1.3 0.5,-0.5 1.3,-0.8 2.3,-0.8 1,0 1.8,0.3 2.3,0.8 0.5,0.6 0.5,1.3 0.5,1.3 l 0,4.3 c 0.1,0.1 -1.1,0.1 -1.1,0.1 z"
+             id="path3398" />
+        </g>
+      </g>
+      <text
+         style="font-size:5px;font-family:Arial-BoldMT;display:none;enable-background:new"
+         transform="translate(0,115)"
+         class="st0 st1 st2"
+         id="text3400">Created by Shrihari Sankaran</text>
+      <text
+         style="font-size:5px;font-family:Arial-BoldMT;display:none;enable-background:new"
+         transform="translate(0,120)"
+         class="st0 st1 st2"
+         id="text3402">from the Noun Project</text>
+    </g>
+  </g>
+  <style
+     type="text/css"
+     id="style3361">
+	.st0{fill:#231F20;}
+	.st1{display:none;enable-background:new    ;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:5px;}
+</style>
+  <style
+     type="text/css"
+     id="style3382">
+	.st0{display:none;enable-background:new    ;}
+	.st1{font-family:'Arial-BoldMT';}
+	.st2{font-size:5px;}
+</style>
+</svg>

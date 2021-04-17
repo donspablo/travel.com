@@ -1,0 +1,39 @@
+// Owl carousel
+//----------------------------------------------------//
+.owl-prev,
+.owl-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	&.disabled {
+		opacity: 0.3;
+	}
+}
+
+.owl-prev {
+	left: 0;
+}
+
+.owl-next {
+	right: 0;
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.owl-dots {
+	text-align: center;
+	padding: 0 5px;
+	margin-top: 20px;
+}
+
+.owl-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #c4c4c4;
+	margin: 0 5px;
+	&:hover,
+	&.active {
+		background-color: $green;
+	}
+}

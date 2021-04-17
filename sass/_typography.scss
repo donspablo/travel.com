@@ -1,0 +1,92 @@
+//----------------------------------------------------//
+// TYPOGRAPHY                                         //
+//----------------------------------------------------//
+body {
+	background: #fff;
+	font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+  color: $mainFontColor;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+h1 {
+	font-size: 38px;
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+h2 {
+	font-size: 30px;
+	margin-bottom: 22px;
+}
+h3, .h3 {
+	font-size: 24px;
+	font-weight: 300;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+}
+p {
+	margin-bottom: 20px;
+}
+strong,
+b {
+	font-weight: 700;
+}
+a {
+	color: $mainFontColor;
+	text-decoration: none;
+	&:hover {
+
+	}
+}
+.subtitle {
+	font-size: 18px;
+	display: block;
+	text-align: center;
+}
+
+//----------------------------------------------------//
+// MEDIA QUERIES                                      //
+//----------------------------------------------------//
+// Small devices < 1024
+//----------------------------------------------------//
+@media screen and (max-width: 1023px) {
+	body {
+		font-size: 15px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 28px;
+		margin-bottom: 27px;
+	}
+	h3, .h3 {
+		font-size: 21px;
+	}
+}
+
+// Extrasmall devices < 768
+//----------------------------------------------------//
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	h3, .h3 {
+		font-size: 14px;
+	}
+}

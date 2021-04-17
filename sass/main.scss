@@ -1,0 +1,1233 @@
+@import 'sprite.scss';
+@import 'normalize&reset.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'plugins.scss';
+@import 'typography.scss';
+@import 'mixins&includes.scss';
+@import 'layout.scss';
+@import 'forms.scss';
+ 
+//----------------------------------------------------//
+// MAIN 						 																	//
+//----------------------------------------------------//
+
+// Icons
+//----------------------------------------------------//
+svg[class^='icon-'],
+svg[class*=' icon-'] {
+	display: inline-block;
+}
+/* flip icons */
+.icon-loupe,
+.icon-pork,
+.icon-key,
+.icon-label {
+	-moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.icon-happy {
+	display: inline-block;
+	width: 133px;
+	height: 30px;
+	img {
+		max-width: 100%;
+	}
+}
+.icon-happy-color {
+	display: inline-block;
+	width: 133px;
+	height: 30px;
+	img {
+		max-width: 100%;
+	}
+}
+.icon-easy {
+	display: inline-block;
+	width: 152px;
+	height: 25px;
+	img {
+		max-width: 100%;
+	}
+}
+.icon-easy-color {
+	display: inline-block;
+	width: 152px;
+	height: 25px;
+	img {
+		max-width: 100%;
+	}
+}
+.icon-marker {
+	width: 13px;
+	height: 16px;
+	fill: $green;
+}
+.icon-logo {
+	width: 100px;
+	height: 98px;
+	fill: #fff;
+}
+.icon-logo-2 {
+	width: 209px;
+	height: 66px;
+}
+.icon-label {
+	width: 22px;
+	height: 22px;
+	fill: $green;
+}
+.icon-star {
+	width: 22px;
+	height: 20px;
+	fill: $orange;
+}
+.icon-agoda,
+.icon-agoda-color {
+	width: 86px;
+	height: 32px;
+}
+.icon-agoda {
+	fill: #fff;
+}
+.icon-booking,
+.icon-booking-color {
+	width: 130px;
+	height: 22px;
+}
+.icon-booking {
+	fill: #fff;
+}
+.icon-ozon,
+.icon-ozon-color {
+	width: 101px;
+	height: 34px;
+}
+.icon-ozon {
+	fill: #fff;
+}
+.icon-ostrovok,
+.icon-ostrovok-color {
+	width: 155px;
+	height: 20px;
+}
+.icon-ostrovok {
+	fill: #fff;
+}
+.icon-arrow {
+	width: 32px;
+	height: 52px;
+	fill: $mainFontColor;
+}
+.icon-key {
+	width: 20px;
+	height: 20px;
+	fill: $green;
+}
+.icon-house {
+	width: 22px;
+	height: 22px;
+	fill: $green;
+}
+.icon-like {
+	width: 22px;
+	height: 22px;
+	fill: $green;
+}
+.icon-loupe {
+	width: 72px;
+	height: 72px;
+	fill: $green;
+}
+.icon-pork {
+	width: 72px;
+	height: 72px;
+	fill: $green;
+}
+.icon-wallet {
+	width: 72px;
+	height: 64px;
+	fill: $green;
+}
+.icon-shield {
+	width: 64px;
+	height: 73px;
+	fill: $green;
+}
+.icon-balance {
+	width: 28px;
+	height: 27px;
+	fill: $green;
+}
+.icon-balance-2 {
+	width: 25px;
+	height: 22px;
+	fill: $green;
+}
+.icon-find {
+	width: 28px;
+	height: 27px;
+	fill: $green;
+}
+.icon-cite {
+	width: 28px;
+	height: 21px;
+	fill: $green;
+}
+.icon-hotel-1 {
+	width: 64px;
+	height: 73px;
+	fill: #fff;
+}
+.icon-hotel-2 {
+	width: 70px;
+	height: 62px;
+	fill: #fff;
+}
+.icon-hotel-3 {
+	width: 78px;
+	height: 57px;
+	fill: #fff;
+}
+.icon-hotel-4 {
+	width: 79px;
+	height: 44px;
+	fill: #fff;
+}
+.icon-search {
+	width: 22px;
+	height: 21px;
+	fill: #fff;
+}
+
+// Links
+//----------------------------------------------------//
+.link-wrap-img {
+	display: block;
+}
+
+// Helpers
+//----------------------------------------------------//
+.show-xm {
+	display: none !important;
+}
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.tbl {
+	display: table;
+	width: 100%;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+// Reusable
+//----------------------------------------------------//
+.border {
+	height: 22px;
+	text-align: center;
+	position: relative;
+	max-width: 83%;
+	margin: 0 auto;
+	margin-bottom: 26px;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		height: 1px;
+		background-color: $green;
+	}
+
+	&__inner {
+		background-color: #fff;
+		display: inline-block;
+		min-width: 68px;
+		padding: 0 10px;
+		position: relative;
+	}
+
+	&--gray-bg {
+		.border__inner {
+			background-color: $gray;
+		}
+	}
+
+	&--green-bg {
+		&:before {
+			background-color: #fff;
+		}
+		.border__inner {
+			background-color: #07af61;
+		}
+	}
+}
+
+// Stars-list
+//----------------------------------------------------//
+.stars-list {
+	font-size: 0;
+	margin-left: -5px;
+	li {
+		font-size: $mainFontSize;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+}
+
+// Logo
+//----------------------------------------------------//
+.logo {
+	color: #fff;
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&__text {
+		display: block;
+		font-style: italic;
+		font-size: 14px;
+		padding: 6px 0;
+	}
+}
+
+// Present
+//----------------------------------------------------//
+.present {
+	padding: 40px 0 50px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+	}
+	&:before {
+		left: 50%;
+		transform: translateX(-100%);
+		border-bottom: 50px solid #fff;
+		border-right: 1500px solid transparent;
+	}
+	&:after {
+		right: 50%;
+		transform: translateX(100%);
+		border-bottom: 50px solid #fff;
+		border-left: 1500px solid transparent;
+	}
+
+	.h3 {
+		margin-bottom: 55px;
+		display: block;
+	}
+
+	&__logo {
+		margin-bottom: 86px;
+	}
+
+	&__form {
+		min-height: 164px;
+		margin-bottom: 96px;
+	}
+}
+
+// Disounts
+//----------------------------------------------------//
+.discounts {
+	padding: 55px 0 55px;
+	.subtitle {
+		max-width: 80%;
+		margin: 0 auto;
+		margin-bottom: 55px;
+	}
+}
+
+.discounts-list {
+	font-size: 0;
+	margin: 0 -15px;
+	> li {
+		display: inline-block;
+		vertical-align: top;
+		font-size: $mainFontSize;
+		width: 33.33%;
+		padding: 0 15px;
+	}
+}
+
+.discounts-item {
+	border: 1px solid $gray;
+	font-size: 18px;
+	display: block;
+	transition: opacity 0.4s ease-in-out;
+
+	&:hover {
+		opacity: 0.85;
+	}
+
+	&__img {
+		max-height: 252px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__bottom {
+		@extend .clearfix;
+		padding: 18px 20px;
+	}
+
+	&__new-price,
+	&__old-price {
+		font-size: 22px;
+	}
+
+	&__new-price {
+		color: $green;
+		float: left;
+	}
+
+	&__old-price {
+		color: $red;
+		float: right;
+	}
+}
+
+// Info
+//----------------------------------------------------//
+.info {
+	background-color: $gray;
+	position: relative;
+	min-height: 88px;
+	padding: 18px 120px 16px 20px;
+	text-align: left;
+	font-size: 18px;
+
+	&__name {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	&__percent {
+		position: absolute;
+		color: #fff;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 98px;
+		background-color: $green;
+		font-size: 26px;
+		font-weight: 600;
+		.tbl {
+			height: 100%;
+		}
+		small {
+			font-size: 14px;
+			display: block;
+			margin-bottom: 3px;
+		}
+	}
+}
+
+// Map
+//----------------------------------------------------//
+.map {
+	background-color: #fff;
+	padding: 14px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	color: $green;
+	line-height: 16px;
+	text-align: center;
+	svg {
+		vertical-align: middle;
+		margin-right: 6px;
+	}
+}
+
+// Features
+//----------------------------------------------------//
+.features {
+	background-color: $green;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	.container {
+		padding: 55px 15px 38px;
+	}
+	h2 {
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	
+	&__inner {
+		max-width: 65%;
+	}
+
+
+	&__img {
+		width: 302px;
+		height: 595px;
+		background-size: cover;
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+	}
+}
+
+.features-list {
+	counter-reset: headings;
+	padding-right: 40px;
+	li {
+		position: relative;
+		padding: 0 0 0 60px;
+		margin-bottom: 42px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:before {
+			counter-increment: headings;
+			content: counter(headings, decimal);
+			font-size: 54px;
+			line-height: 1;
+			font-weight: 700;
+			position: absolute;
+			left: 0;
+			top: -5px;
+		}
+	}
+	strong {
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+// System
+//----------------------------------------------------//
+.system {
+	color: #fff;
+	text-align: center;
+	a {
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.system-list {
+	font-size: 0;
+	text-align: center;
+	li {
+		font-size: $mainFontSize;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 15px;
+	}
+	.cell {
+		height: 34px;
+	}
+}
+
+// Find
+//----------------------------------------------------//
+.find {
+	background-color: $gray;
+	padding: 55px 0 55px;
+	h2 {
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.subtitle {
+		max-width: 88%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 53px;
+	}
+}
+
+.find-list {
+	max-width: 70.5%;
+	margin: 0 auto;
+	li {
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.find-item {
+	display: table;
+
+	&__icon,
+	&__text {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	&__text {
+		padding-left: 21px;
+	}
+}
+
+// Widget
+//----------------------------------------------------//
+.widget {
+	padding: 55px 0 56px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #555658;
+	color: #fff;
+	h2 {
+		max-width: 88%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 55px;
+	}
+
+	&__form {
+		min-height: 164px;
+	}
+}
+
+// Slider
+//----------------------------------------------------//
+.slider {
+	padding: 55px 0 56px;
+	.border {
+		margin-bottom: 26px;
+	}
+	.subtitle {
+		margin-bottom: 55px;
+	}
+}
+
+.slider-list {
+	padding: 0 80px;
+	// max-height: 368px;
+	// overflow: hidden;
+}
+
+.slide {
+	display: block;
+
+	&__img {
+		padding: 40px 40px 60px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__card {
+		width: 294px;
+		margin: 0 auto;
+	}
+}
+
+// Price-list
+//----------------------------------------------------//
+.prices-list {
+	font-size: 0;
+	width: 100%;
+	li {
+		display: inline-block;
+		vertical-align: top;
+		height: 60px;
+		line-height: 60px;
+		width: 31%;
+		background-color: #fafafa;
+		color: #787878;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 22px;
+		&.active {
+			font-weight: 600;
+			font-size: 28px;
+			width: 38%;
+			background-color: $orange;
+			color: #fff;
+		}
+	}
+}
+
+// Comment
+//----------------------------------------------------//
+.companies-list {
+	font-size: 0;
+	width: 100%;
+	background-color: $gray;
+	li {
+		display: inline-block;
+		vertical-align: top;
+		width: 33.33%;
+	}
+	.cell {
+		height: 75px;
+	}
+}
+
+//----------------------------------------------------//
+// MEDIA QUERIES                                      //
+//----------------------------------------------------//
+// Small devices < 1024
+//----------------------------------------------------//
+@media screen and (max-width: 1023px) {
+	.border {
+		max-width: 100%;
+	}
+
+	.present {
+		&__logo {
+			margin-bottom: 66px;
+		}
+		h1 {
+			margin: 0 -5px 20px;
+		}
+		&__form {
+			margin-bottom: 80px;
+		}
+	}
+
+	.discounts {
+		.subtitle {
+			max-width: 100%;
+		}
+	}
+
+	.discounts-list {
+		margin: 0;
+		padding: 0 62px;
+	}
+
+	.advantages-item {
+		padding: 0 10px;
+
+		&__text {
+			font-size: 14px;
+		}
+	}
+
+	.find {
+		h2,
+		.subtitle {
+			max-width: 100%;
+		}
+	}
+
+	.find-list {
+		max-width: 87%;
+		li {
+			margin-bottom: 36px;
+		}
+	}
+
+	.widget {
+		h2 {
+			max-width: 100%;
+		}
+	}
+
+	.features {
+		h2 {
+			margin-bottom: 56px;
+		}
+
+		&__inner {
+			max-width: 80%;
+		}
+
+		&__img {
+			width: 256px;
+			height: 506px;
+			// background-size: ;
+		}
+	}
+
+	.features-list {
+		padding-right: 130px;
+		font-size: 16px;
+		li {
+			padding-left: 0;
+			&:before {
+				display: none;
+			}
+		}
+		strong {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+
+	.slider-list {
+		padding: 0 62px;
+	}
+}
+
+// Extrasmall devices < 768
+//----------------------------------------------------//
+@media screen and (max-width: 767px) {
+	// Helpers
+	//----------------------------------------------------//
+	.hide-xm {
+		display: none !important;
+	}
+
+	.show-xm {
+		display: block !important;
+	}
+
+	// Icons
+	//----------------------------------------------------//
+	.icon-happy {
+		width: 110px;
+	}
+	.icon-easy {
+		width: 120px;
+	}
+	.icon-happy-color {
+		width: 75px;
+	}
+	.icon-easy-color {
+		width: 90px;
+	}
+	.icon-marker {
+		width: 11px;
+		height: 13px;
+	}
+	.icon-star {
+		width: 18px;
+		height: 16px;
+	}
+	.icon-arrow {
+		width: 23px;
+		height: 36px;
+	}
+	.icon-hotel-1 {
+		width: 44px;
+		height: 51px;
+	}
+	.icon-hotel-2 {
+		width: 48px;
+		height: 53px;
+	}
+	.icon-hotel-3 {
+		width: 54px;
+		height: 39px;
+	}
+	.icon-hotel-4 {
+		width: 55px;
+		height: 31px;
+	}
+	.icon-logo {
+		width: 80px;
+		height: 84px;
+	}
+	.icon-logo-2 {
+		width: 160px;
+		height: 50px;
+	}
+	.icon-booking {
+		width: 104px;
+		height: 18px;
+	}
+	.icon-agoda {
+		width: 68px;
+		height: 28px;
+	}
+	.icon-ostrovok {
+		width: 124px;
+		height: 16px;
+	}
+	.icon-ozon {
+		width: 78px;
+		height: 26px;
+	}
+	.icon-booking-color {
+		width: 67px;
+		height: 11px;
+	}
+	.icon-agoda-color {
+		width: 51px;
+		height: 17px;
+	}
+	.icon-ostrovok-color {
+		width: 71px;
+		height: 9px;
+	}
+	.icon-ozon-color {
+		width: 51px;
+		height: 17px;
+	}
+	.icon-loupe,
+	.icon-pork {
+		width: 37px;
+		height: 36px;
+	}
+	.icon-wallet {
+		width: 37px;
+		height: 34px;
+	}
+	.icon-shield {
+		width: 31px;
+		height: 36px;
+	}
+
+	// Logo
+	//----------------------------------------------------//
+	.logo {
+		&__text {
+			display: none;
+		}
+	}
+
+	// Present
+	//----------------------------------------------------//
+	.present {
+		padding: 16px 0 18px;
+		h1 {
+			margin-bottom: 15px;
+		}
+		.h3 {
+			margin-bottom: 15px;
+		}
+
+		&__logo {
+			margin-bottom: 20px;
+		}
+
+		&__form {
+			margin-bottom: 20px;
+		}
+	}
+
+	.system {
+		&__title {
+			display: none;
+		}
+	}
+
+	.system-list {
+		li {
+			width: 40%;
+			margin: 0 0 4px;
+			&:nth-child(2n) {
+				width: 60%;
+			}
+		}
+	}
+
+	// Disounts
+	//----------------------------------------------------//
+	.discounts {
+		padding: 28px 0 26px;
+		h2 {
+			max-width: 100%;
+		}
+		.subtitle {
+			display: none;
+		}
+	}
+
+	.discounts-list {
+		padding: 0 23px;
+	}
+
+	.discounts-item {
+		&__old-price,
+		&__new-price {
+			font-size: 18px;
+		}
+
+		&__bottom {
+			padding: 13px 20px;
+		}
+	}
+
+	// Info
+	//----------------------------------------------------//
+	.info {
+		font-size: 15px;
+		min-height: 74px;
+		padding: 14px 100px 14px 20px;
+
+		&__percent {
+			font-size: 22px;
+			width: 83px;
+
+			small {
+				font-size: 11px;
+			}
+		}
+	}
+
+	// Features
+	//----------------------------------------------------//
+	.features {
+		.container {
+			padding: 28px 15px 30px;
+		}
+		h2 {
+			margin-bottom: 27px;
+			>span {
+				display: block;
+				&+span {
+					margin-top: 20px;
+				}
+			}
+		}
+		&__inner {
+			max-width: 100%;
+			padding: 0;
+		}
+
+		&__img {
+			display: none;
+		}
+	}
+
+	.features-list {
+		font-size: 15px;
+		padding-right: 0;
+		li {
+			padding-left: 22px;
+			margin-bottom: 20px;
+			&:last-child {
+				p {
+					margin-bottom: 0;
+				}
+			}
+			&:before {
+				content: counter(headings, decimal) ". ";
+				display: block;
+				font-size: 15px;
+				line-height: 1.2;
+				top: 0;
+				font-weight: 400;
+			}
+		}
+		strong {
+			font-size: 15px;
+			margin-bottom: 18px;
+		}
+	}
+
+	// Slider
+	//----------------------------------------------------//
+	.slider {
+		padding: 28px 0 26px;
+		.subtitle {
+			display: none;
+		}
+
+		.info {
+			font-size: 14px;
+		}
+	}
+
+	.slider-list {
+		padding: 0;
+		.owl-dots {
+			margin-top: 15px;
+		}
+	}
+
+	.slide {
+		&__img {
+			padding: 33px 20px 51px;
+		}
+
+		&__card {
+			width: 243px;
+		}
+	}
+
+	// Prices-list
+	//----------------------------------------------------//
+	.prices-list {
+		li {
+			font-size: 13px;
+			height: 50px;
+			line-height: 50px; 
+			&.active {
+				font-size: 17px;
+			}
+		}
+	}
+
+	// Company-list
+	//----------------------------------------------------//
+	.companies-list {
+		.cell {
+			height: 38px;
+		}
+	}
+
+	// Map
+	//----------------------------------------------------//
+	.map {
+		font-size: 11px;
+		padding: 8px 10px;
+	}
+
+
+	// Find
+	//----------------------------------------------------//
+	.find {
+		padding: 28px 0 25px;
+		.subtitle {
+			display: none;
+		}
+	}
+
+	.find-list {
+		max-width: 100%;
+		counter-reset: headings;
+		li {
+			position: relative;
+			padding: 0 0 0 22px;
+			margin-bottom: 18px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:before {
+				counter-increment: headings;
+				content: counter(headings, decimal) '. ';
+				font-size: 15px;
+				color: $green;
+				line-height: 1.2;
+				position: absolute;
+				left: 0;
+				top: 0px;
+			}
+			>strong {
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.find-item {
+		&__icon {
+			display: none;
+		}
+		&__text {
+			padding-left: 0;
+		}
+	}
+
+	// Widget
+	//----------------------------------------------------//
+	.widget {
+		padding: 28px 0 30px;
+		.h3 {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+// Triangle block height
+//----------------------------------------------------//
+@media screen and (max-height: 799px) and (min-height: 640px) and (min-width: 768px) {
+	.present {
+		padding: 0;
+		.container {
+			height: 100vh;
+			padding-top: 40px;
+			padding-bottom: 60px;
+		}
+
+		&__form {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-height: 799px) and (min-height: 721px) and (min-width: 768px) {
+	.present {
+		&__system,
+		&__fix-height {
+			position: absolute;
+			left: 15px;
+			right: 15px;
+		}
+		&__system {
+			bottom: 55px;
+		}
+		&__fix-height {
+			padding-bottom: 103px;
+			bottom: 115px;
+		}
+	}
+} 
+
+@media screen and (max-height: 720px) and (min-height: 676px) and (min-width: 768px) {
+	.present {
+		&__logo {
+			margin-bottom: 20px;
+		}
+		&__fix-height {
+			position: static;
+			bottom: 115px;
+			padding-bottom: 113px;
+		}
+		&__system {
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			bottom: 55px;
+		}
+	}
+}
+
+@media screen and (max-height: 675px) and (min-height: 640px) and (min-width: 768px) {
+	.present {
+		&__logo {
+			margin-bottom: 20px;
+		}
+		&__form {
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			bottom: 173px;
+		}
+		&__system {
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			bottom: 55px;
+		}
+	}
+}
