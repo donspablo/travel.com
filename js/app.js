@@ -98,7 +98,7 @@ window.TP_FORM_SETTINGS = window.TP_FORM_SETTINGS ||
     {};
 window.TP_FORM_SETTINGS[set_handle] = {
         "handle": set_handle,
-			"widget_name": "Went Guru Travel Landings EN",
+			"widget_name": "Travel.com Travel Landings EN",
 			"border_radius": "2",
 			"additional_marker": null,
 			"width": 940,
@@ -113,7 +113,7 @@ window.TP_FORM_SETTINGS[set_handle] = {
 			"search_host": "www.jetradar.com",
 			"hotels_host": "go.obeyi.com/search",
 			"hotel": "",
-			"hotel_alt": "Went Guru Travel - hotel price comparison. Search for hotels and find the best price",
+			"hotel_alt": "Travel.com Travel - hotel price comparison. Search for hotels and find the best price",
 			"avia_alt": "",
 			"retargeting": true,
 			"trip_class": "economy",
